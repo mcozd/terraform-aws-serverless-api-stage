@@ -1,9 +1,11 @@
 variable "name" {
     type = string
+    description = "The name of the stage. Will also be part of your api path (e.g. domain/name/resource)."
 }
 
 variable "description" {
   type = string
+  description = "The description of the created stage."
   default = ""
 }
 
