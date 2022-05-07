@@ -7,15 +7,7 @@ variable "description" {
   default = ""
 }
 
-variable "endpoints" {
-    type = list(object({
-        resource = any
-        method = any
-        integration = any
-    }))
-}
-
-variable "authorizer" {
-  type = any
-  default = null
+variable "api_id" {
+  type = string
+  description = "The id of the api where the stage should be added."
 }
