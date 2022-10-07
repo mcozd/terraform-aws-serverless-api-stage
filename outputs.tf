@@ -1,3 +1,7 @@
-output "name" {
-  value = aws_api_gateway_deployment.deployment.invoke_url
+output "deployment" {
+  value = aws_api_gateway_deployment.deployment
+}
+
+output "stage" {
+  value = aws_api_gateway_stage.stage
 }
